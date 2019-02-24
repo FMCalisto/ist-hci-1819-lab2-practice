@@ -102,12 +102,12 @@ function displaySchedule() {
 
 
 function notifyON() {
-  // TODO
+  var timer = setInterval(showAlert, 5000);
 }
 
 
 function showAlert() {
-  // TODO
+  document.getElementById("alertsuccess").style.display = "block";
 }
 
 

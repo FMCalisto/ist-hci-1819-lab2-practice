@@ -2,6 +2,8 @@
 <head>
   <title>Onde estudar?</title>
   <link rel="stylesheet" href="styles/lab2.css">
+  <script src="scripts/rooms.js"></script>
+  <script src="scripts/lab2.js"></script>
 </head>
 <body onload="displayDate();displaySchedule();">
   <div id="main">
@@ -9,7 +11,7 @@
     <div id="alertsuccess" class="alert success">
       A sala que subscreveste já se encontra livre.
       <a>
-        <span class="closebtn">x</span>
+        <span class="closebtn" onclick="closeAlert()">x</span>
       </a>
     </div>
     <h1>Onde estudar?</h1>
@@ -25,10 +27,8 @@
     </div>
     <div id="footer">
       <button type="button" onclick="goBack()">Voltar</button>
-      <button type="button">Alertar quando sala estiver livre</button>
+      <button type="button" onclick="notifyON()">Alertar quando sala estiver livre</button>
     </div>
   </div>
-  <script src="scripts/rooms.js"></script>
-  <script src="scripts/lab2.js"></script>
 </body>
 </html>
