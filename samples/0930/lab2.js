@@ -1,31 +1,20 @@
 
 function loadAllRoomData(roomData) {
-  localStorage.setItem("AllRoomData", JSON.stringify(roomData));
+  // TODO
 }
 
 
 function getRoomCoords(roomName) {
-  /*
-   * var   -> function scope
-   * let   -> block scope, can be updaed
-   * const -> block scope, can not be updated
-   *
-   */
-  roomData = JSON.parse(localStorage.getItem("AllRoomData"));
-  for(let i = 0; i < roomData.length; i++){
-    if(roomData[i].roomname == roomName){
-      return roomData[i].coords;
-    }
-  }
+  // TODO
+
 }
 
 
 function setLocationPin(x1, y1, x2, y2) {
   var positionX = x1 + (x2 - x1) / 2.0 - 45;
   var positionY = y1 + (y2 - y1) / 2.0 - 45;
-
-  document.getElementById("target").style.left = positionX;
-  document.getElementById("target").style.top =positionY;
+  
+  // TODO
 
   document.getElementById("target").style.visibility = "visible";
 }
@@ -67,13 +56,9 @@ function displayDate() {
 }
 
 
-function getRoomSchedule(roomName) {
-  roomData = JSON.parse(localStorage.getItem("AllRoomData"));
-  for(let i = 0; i < roomData.length; i++){
-    if(roomData[i].roomname == roomName){
-      return roomData[i].classes;
-    }
-  }
+function getRoomSchedule(roomName) { 
+ // TODO
+
 }
 
 
@@ -81,22 +66,15 @@ function displaySchedule() {
 
   // Get and display the selected room
   var roomName = localStorage.getItem("roomName");
-  document.getElementById("currentRoom").innerHTML += roomName;
-
+  // TODO
+  
   // Load the schedule for the current room
   currentSchedule = getRoomSchedule(roomName);
 
   hourcol = document.getElementById("hours");
   classcol = document.getElementById("classes");
 
-  for(let i = 0; i < currentSchedule.length; i++) {
-    hourcol.innerHTML += '<div class="timeslot">' + currentSchedule[i].time + '</div>';
-    if(currentSchedule[i].classname == "none") {
-      classcol.innerHTML += '<div class="emptyslot">&nbsp;</div>';
-    } else {
-      classcol.innerHTML += '<div class="classslot">' + currentSchedule[i].classname + '</div>';
-    }
-  }
+  // TODO
 
 }
 

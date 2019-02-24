@@ -1,4 +1,4 @@
-var roomdata = {
+var roomdata = { 
 
 	rooms : [
 	{
