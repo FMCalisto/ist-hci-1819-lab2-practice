@@ -119,5 +119,6 @@ function closeAlert() {
 
 
 function goBack() {
-  // TODO - TPC
+  // window.history.back();
+  window.location.replace("index.html");
 }
